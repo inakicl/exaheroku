@@ -3,6 +3,8 @@
 
 if(Session::getUID()!=""){
 		print "<script>window.location='index.php?view=home';</script>";
+} else{
+    print "error ". Session::getUID();
 }
 
 ?>
